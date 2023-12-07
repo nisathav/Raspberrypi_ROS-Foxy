@@ -9,3 +9,4 @@ Connecting Raspberrypi with Linux using Ethernet
 5. open terminal and find the ip address of the raspberrypi. open network settings and find the ip address
 6. `sudo apt-get install openssh-server openssh-client`
 7. open putty `sudo putty` -> copy the ip number -> go to SSH -> X11 -> Enable X11 forwarding
+8. use the username `pi` and password `raspberry`
