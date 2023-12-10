@@ -8,5 +8,5 @@ Connecting Raspberrypi with Linux using Ethernet
 4. now connect the raspberrypi
 5. open terminal and find the ip address of the raspberrypi. open network settings and find the ip address
 6. `sudo apt-get install openssh-server openssh-client`
-7. open putty `sudo putty` -> copy the ip number -> go to SSH -> X11 -> Enable X11 forwarding
-8. use the username `pi` and password `raspberry`
+7. type in `arp -a` to find the ip address of the pi and use ``
+8. setting up the network refer to this weblinks `https://articulatedrobotics.xyz/ready-for-ros-2-networking/` and for netplan tutorial refer `https://linuxconfig.org/netplan-network-configuration-tutorial-for-beginners`
