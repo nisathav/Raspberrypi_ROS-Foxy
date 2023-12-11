@@ -14,4 +14,11 @@ Connecting Raspberrypi with Linux using Ethernet
 
 Clone from github
 ---------------
-1. create ssh key in your raspberry. 
+1. create ssh key in your raspberry. `ssh-keygen` follow the instrcutions and copy the contents in the .pub folder. go to github and create a new SSH key
+2. `git clone <ssh address of the repo>`
+
+Power up LIDAR
+-------------
+1. connect the Lidar to the raspberry pi
+2. clone the lidar repo `sudo apt install ros-foxy-rplidar-ros`
+3. `ros2 run rplidar_ros rplidar_composition --ros-args -p serial_port:=/dev/ttyUSB0 -p frame_id:=laser_frame -p angle_compensate:=true -p scan_mode:=Standard` run the lidar package
