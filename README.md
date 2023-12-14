@@ -17,6 +17,19 @@ Clone from github
 1. create ssh key in your raspberry. `ssh-keygen` follow the instrcutions and copy the contents in the .pub folder. go to github and create a new SSH key
 2. `git clone <ssh address of the repo>`
 
+Flash arduino remotely
+----------------------
+1. connect the raspberry pi to the same wifi and the PC.
+2. install arduino ide in the raspberry pi
+3. install the following repository `git clone https://github.com/joshnewans/ros_arduino_bridge.git` in pi
+4. open visual studio in pc and install the `Remote - SSH` extension
+5. click the little arrow on the bottom left corner -> select `connect to host...` -> enter `ssh nisath@192.168.8.144`
+6. select `open folder` -> `ros_arduino_bridge/ros_arduino_firmware/src/libraries/ROSArduinoBridge` -> the files we are accessing is actually on the pi
+7. go to extensions -> `Arduino` -> clear the things in the search bar -> select and right click on the installed Arduino extension
+8. go to extension settings -> open terminal in the vscode -> ls -l 'which arduino'
+9. the above code will return a path copy it and paste it in the `Arduino: Path`
+10. `Ctrl-Shift-P` to open command palette and type `reload`
+
 Power up LIDAR
 -------------
 1. connect the Lidar to the raspberry pi
