@@ -33,7 +33,7 @@ Flash arduino remotely
 12. select the serial port, board and programmer. Install the board in case needed
 13. `Ctrl-Shift-P` to open command palette and type arduino sketch to upload the sketch
 14. go to vscode and add the following line `"board":"arduino:avr:uno`
-15. 
+15. open command pallete and use `verify` `upload` to flash the code into arduino remotely
 
 Power up LIDAR
 -------------
